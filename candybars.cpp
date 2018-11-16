@@ -10,20 +10,22 @@ using namespace std;
 int main()
 {
 	int candyBars;
+	int costPerOz = 2;
 	float weight = 3.33;
+	float totalWeight;
+	float cost;
 
 	cout << "Enter number of candybars: ";
 	cin >> candyBars;
 
 	//total weight
-	float totalWeight = 3.33 * candyBars;
+	totalWeight = weight * candyBars;
 	cout << "Weight: ";
 	cout << totalWeight;
 	cout << "oz" << endl;
 
 	//total cost
-	int costPerOz = 2;
-	float cost = costPerOz * totalWeight;
+	cost = costPerOz * totalWeight;
 	cout << "Cost: $";
 	cout << cost << endl;
 
